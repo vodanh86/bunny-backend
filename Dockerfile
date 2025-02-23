@@ -18,7 +18,6 @@ EXPOSE 3000
 
 # Set environment variables
 ENV PORT=3000
-ENV API_KEY=2444c606-0297-4056-8b31-5764c9e24a66650d113f-8174-4dc8-9658-4f66069e41b6
 ENV BASE_URL=https://api.bunny.net
 ENV VIDEO_URL=https://video.bunnycdn.com
 
