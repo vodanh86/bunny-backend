@@ -13,13 +13,11 @@ RUN npm install
 # Copy the rest of the application code to the working directory
 COPY . .
 
+# Copy the .env file to the working directory
+COPY .env .env
+
 # Expose the port the app runs on
 EXPOSE 3000
-
-# Set environment variables
-ENV PORT=3000
-ENV BASE_URL=https://api.bunny.net
-ENV VIDEO_URL=https://video.bunnycdn.com
 
 # Start the application
 CMD ["npm", "start"]
